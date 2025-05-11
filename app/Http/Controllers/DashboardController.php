@@ -12,7 +12,7 @@ use Illuminate\support\facades\Storage;
 
 class DashboardController extends Controller
 {
-    public function HomePage(){
+    public function Index(){
         //عدد المتاحف
         $Museumscount = DB::table('museums')->count();
         $reservationcount = DB::table('reservations')->count();
