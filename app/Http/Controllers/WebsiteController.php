@@ -8,7 +8,7 @@ use Illuminate\support\facades\DB;
 
 class WebsiteController extends Controller
 {
-    public function Index(){
+    public function HomePage(){
         $value=session()->get('mykey');
         
         $data=DB::table('museums')
